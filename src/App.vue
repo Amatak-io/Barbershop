@@ -1,21 +1,6 @@
-<script>
+<script setup lang="ts">
   import Black from './components/Black.vue'
   import White from './components/White.vue'
-
-  export default {
-      data: function () {
-        return {
-          selected: 'appBlack',
-          label: 'Label Name',
-
-        };
-      },
-      components: {
-          appBlack: Black,
-          appWhite: White,
-
-      }
-  }
 </script>
 
 <template>
