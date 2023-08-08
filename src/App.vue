@@ -1,85 +1,44 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+  import Black from './components/Black.vue'
+  import White from './components/White.vue'
+
+  export default {
+      data: function () {
+        return {
+          selected: 'appBlack',
+          label: 'Label Name',
+
+        };
+      },
+      components: {
+          appBlack: Black,
+          appWhite: White,
+
+      }
+  }
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/Habibi.png" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="HABIBI BARBER" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+<body class="MainHomePageBackground__item">
+<main>
+ <header>
+  <div class="MainHomePageBackground__habibi_logo">
+    <img alt="Habibi LOGO" class="logo" src="@/assets/Habibi.png" width="125" height="125" /></div>
+    <div class="MainHomePageBackground_Follow_Us">
+    <slot>Follow Us !</slot></div>
+    <div class="MainHomePageBackground_Follow_Us">
+    <slot><a class="Follow_Us_icons" href="https://www.facebook.com/profile.php?id=100091803657905/"><img alt="Facebook" class="Follow_Us_icons" src="" width="60" height="60" /></a></slot>  &nbsp; | &nbsp;    <a class="" href="https://www.instagram.com/habibi_barber79/"><img alt="Instagram" class="logo" src="" width="60" height="60" /></a>
     </div>
   </header>
+</main>
 
-  <RouterView />
+</body>
+<div class="MainHomePageBackground_power_by">
+<slot>This site is built by: <a class="" href="https://amatak.io/">Amatak</a></slot></div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+<style>
+  @import "./assets/main.css";
 </style>

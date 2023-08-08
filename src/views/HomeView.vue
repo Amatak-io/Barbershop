@@ -4,9 +4,12 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
+  <br>
+  <br>
   <h1 class="tag is-danger is-large">0412795479</h1>
     <TheWelcome />
   </main>
+
 </template>
 
 

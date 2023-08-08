@@ -52,4 +52,5 @@ import SupportIcon from './icons/IconSupport.vue'
     $10
     <a href="#" target="_blank" rel="noopener">Book Now</a>.
   </WelcomeItem>
+
 </template>
