@@ -12,7 +12,7 @@
     <div class="MainHomePageBackground_Follow_Us">
     <slot>Follow Us !</slot></div>
     <div class="MainHomePageBackground_Follow_Us">
-    <slot><a class="Follow_Us_icons" href="https://www.facebook.com/profile.php?id=100091803657905/"><img alt="Facebook" class="Follow_Us_icons" src="@/assets/facebook_red.svg" width="60" height="60" /></a></slot>  &nbsp; | &nbsp;    <a class="" href="https://www.instagram.com/habibi_barber79/"><img alt="Instagram" class="logo" src="@/assets/instagram_red.svg" width="60" height="60" /></a>
+    <slot><a class="Follow_Us_icons" href="https://www.facebook.com/profile.php?id=100091803657905/">Facebook</a></slot>  &nbsp; | &nbsp;    <a class="" href="https://www.instagram.com/habibi_barber79/">Instagram</a>
     </div>
   </header>
 </main>
